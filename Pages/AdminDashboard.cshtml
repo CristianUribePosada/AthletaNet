@@ -1,0 +1,172 @@
+﻿@page
+@model AthletaNet.Pages.AdminDashboardModel
+@{
+    ViewData["Title"] = "Consola de Administración";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold text-dark">Panel de Control <span class="text-primary">Administrador</span></h2>
+        <a asp-page="/Index" class="btn btn-outline-secondary fw-semibold">Volver al Inicio</a>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.MensajeExito))
+    {
+        <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+            ✨ @Model.MensajeExito
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 bg-light p-3 mb-3">
+                <h5 class="fw-bold text-primary mb-3">Registrar Cliente</h5>
+                <form method="post" asp-page-handler="CrearCliente">
+                    <div class="mb-2">
+                        <label class="small fw-semibold text-secondary">Nombre Completo</label>
+                        <input type="text" asp-for="NuevoNombre" class="form-control form-control-sm" required />
+                    </div>
+                    <div class="mb-2">
+                        <label class="small fw-semibold text-secondary">Username</label>
+                        <input type="text" asp-for="NuevoUsername" class="form-control form-control-sm" required />
+                    </div>
+                    <div class="mb-2">
+                        <label class="small fw-semibold text-secondary">Contraseña</label>
+                        <input type="password" asp-for="NuevoPassword" class="form-control form-control-sm" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="small fw-semibold text-secondary">Tipo de Membresía</label>
+                        <select asp-for="TipoMembresia" class="form-select form-select-sm">
+                            <option value="Mensual">Mensual (1 Mes)</option>
+                            <option value="Trimestral">Trimestral (3 Meses)</option>
+                            <option value="Anual">Anual (1 Año)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm w-100 fw-bold">Guardar Cliente</button>
+                </form>
+            </div>
+
+            <div class="card shadow-sm border-0 bg-light p-3">
+                <h5 class="fw-bold text-success mb-3">Registrar Instructor</h5>
+                <form method="post" asp-page-handler="CrearInstructor">
+                    <div class="mb-2">
+                        <label class="small fw-semibold text-secondary">Nombre Completo</label>
+                        <input type="text" asp-for="NuevoNombre" class="form-control form-control-sm" required />
+                    </div>
+                    <div class="mb-2">
+                        <label class="small fw-semibold text-secondary">Username</label>
+                        <input type="text" asp-for="NuevoUsername" class="form-control form-control-sm" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="small fw-semibold text-secondary">Contraseña</label>
+                        <input type="password" asp-for="NuevoPassword" class="form-control form-control-sm" required />
+                    </div>
+                    <button type="submit" class="btn btn-success btn-sm w-100 fw-bold">Guardar Instructor</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <h5 class="fw-bold text-dark mb-3">Clientes en la Lista Enlazada</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle row-border">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Username</th>
+                                    <th>Membresía</th>
+                                    <th>Estado</th>
+                                    <th class="text-center">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (!Model.ListaClientes.Any())
+                                {
+                                    <tr>
+                                        <td colspan="5" class="text-center text-muted py-3">No hay clientes registrados en el archivo plano.</td>
+                                    </tr>
+                                }
+                                @foreach (var cliente in Model.ListaClientes)
+                                {
+                                    <tr>
+                                        <td class="fw-bold text-secondary">@cliente.NombreCompleto</td>
+                                        <td><code>@cliente.Username</code></td>
+                                        <td><span class="badge bg-info text-dark">@cliente.MembresiaActual.Tipo</span></td>
+                                        <td>
+                                            @if (cliente.MembresiaActual.Activa)
+                                            {
+                                                <span class="badge bg-success">Activa</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-danger">Vencida</span>
+                                            }
+                                        </td>
+                                        <td class="text-center">
+                                            <form method="post" asp-page-handler="EliminarCliente" asp-route-username="@cliente.Username" class="d-inline">
+                                                <button type="submit" class="btn btn-danger btn-sm px-2 py-0fw-bold" onclick="return confirm('¿Seguro que deseas eliminar este cliente? Se borrarán sus turnos.')">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="fw-bold text-dark mb-3">Instructores Registrados</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle row-border">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Username</th>
+                                    <th>Estado</th>
+                                    <th class="text-center">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (!Model.ListaInstructores.Any())
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center text-muted py-3">No hay instructores en el sistema.</td>
+                                    </tr>
+                                }
+                                @foreach (var inst in Model.ListaInstructores)
+                                {
+                                    <tr>
+                                        <td class="fw-bold text-secondary">@inst.NombreCompleto</td>
+                                        <td><code>@inst.Username</code></td>
+                                        <td>
+                                            @if (inst.Activo)
+                                            {
+                                                <span class="badge bg-success">Habilitado</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-secondary">Deshabilitado</span>
+                                            }
+                                        </td>
+                                        <td class="text-center">
+                                            <form method="post" asp-page-handler="AlternarInstructor" asp-route-username="@inst.Username" asp-route-estadoActual="@inst.Activo" class="d-inline">
+                                                <button type="submit" class="btn @(inst.Activo ? "btn-warning" : "btn-success") btn-sm px-2 py-0 fw-bold">
+                                                    @(inst.Activo ? "Deshabilitar" : "Habilitar")
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

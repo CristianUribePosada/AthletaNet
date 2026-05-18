@@ -1,0 +1,106 @@
+﻿@page
+@model AthletaNet.Pages.ClienteDashboardModel
+@{
+    ViewData["Title"] = "Zona de Atletas";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold text-dark">Zona de <span class="text-warning">Atletas</span></h2>
+        <a asp-page="/Index" class="btn btn-outline-secondary fw-semibold">Volver al Inicio</a>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.MensajeTurno))
+    {
+        <div class="alert alert-@Model.TipoMensaje alert-dismissible fade show shadow-sm" role="alert">
+            @(Model.TipoMensaje == "success" ? "💪" : "⚠️") @Model.MensajeTurno
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm bg-light mb-3">
+                <div class="card-body">
+                    <h5 class="fw-bold text-dark mb-3">Tu Suscripción</h5>
+                    <p class="mb-1"><strong>Plan actual:</strong> <span class="badge bg-info text-dark">@Model.ClienteActual?.MembresiaActual.Tipo</span></p>
+                    <p class="mb-1"><strong>Vence el:</strong> @Model.ClienteActual?.MembresiaActual.FechaVencimiento.ToString("dd/MM/yyyy")</p>
+                    <p class="mb-0">
+                        <strong>Estado:</strong>
+                        @if (Model.ClienteActual != null && Model.ClienteActual.MembresiaActual.Activa)
+                        {
+                            <span class="badge bg-success">Activo para Entrenar</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Membresía Vencida</span>
+                        }
+                    </p>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm bg-dark text-white p-2">
+                <div class="card-body">
+                    <h5 class="fw-bold text-warning mb-3">Agendar Turno de Hoy</h5>
+                    <form method="post" asp-page-handler="SolicitarTurno">
+                        <div class="mb-3">
+                            <label class="small fw-semibold text-light mb-1">Selecciona un Entrenador (Opcional)</label>
+                            <select asp-for="InstructorSeleccionado" class="form-select form-select-sm">
+                                <option value="">Ninguno (Entrenamiento Libre)</option>
+                                @foreach (var inst in Model.InstructoresDisponibles)
+                                {
+                                    <option value="@inst.Username">Coach @inst.NombreCompleto</option>
+                                }
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-sm w-100 fw-bold text-dark"
+                            @(Model.ClienteActual != null && !Model.ClienteActual.MembresiaActual.Activa ? "disabled" : "")>
+                            Reservar mi Entrada
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold text-dark mb-3">Tu Historial de Asistencia</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Código Turno</th>
+                                    <th>Fecha</th>
+                                    <th>Instructor Asignado</th>
+                                    <th>Rutina del Día</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (!Model.MiHistorialTurnos.Any())
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center text-muted py-3">No has registrado asistencias todavía. ¡Agenda tu primer turno!</td>
+                                    </tr>
+                                }
+                                @foreach (var turno in Model.MiHistorialTurnos)
+                                {
+                                    <tr>
+                                        <td><code>#@turno.Id</code></td>
+                                        <td>@turno.Fecha.ToString("dd/MM/yyyy")</td>
+                                        <td>@(string.IsNullOrEmpty(turno.InstructorUsername) ? "Entrenamiento Libre" : $"Coach: {turno.InstructorUsername}")</td>
+                                        <td>
+                                            <span class="badge @(string.IsNullOrEmpty(turno.RutinaAsociada) ? "bg-secondary" : "bg-success")">
+                                                @(turno.RutinaAsociada ?? "Pendiente por asignar")
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

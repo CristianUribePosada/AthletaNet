@@ -1,0 +1,101 @@
+﻿@page
+@model AthletaNet.Pages.InstructorDashboardModel
+@{
+    ViewData["Title"] = "Portal de Instructores";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold text-dark">Portal de <span class="text-info">Instructores</span></h2>
+        <a asp-page="/Index" class="btn btn-outline-secondary fw-semibold">Volver al Inicio</a>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.MensajeInstructor))
+    {
+        <div class="alert alert-info shadow-sm" role="alert">
+            @Model.MensajeInstructor
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-7 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold text-dark mb-3">Fila de Espera del Día (Orden de Llegada)</h5>
+
+                    @if (!Model.MisTurnosAsignados.Any())
+                    {
+                        <div class="text-center text-muted py-5">
+                            <h3 class="display-1 text-light">☕</h3>
+                            <p class="mb-0">No hay atletas esperando en tu cola en este momento.</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="list-group">
+                            @{
+                                int posicion = 1;
+                            }
+                            @foreach (var turno in Model.MisTurnosAsignados)
+                            {
+                                <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-start border-4 @(posicion == 1 ? "border-danger bg-light-danger" : "border-info")">
+                                    <div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="badge bg-secondary">#@posicion en fila</span>
+                                            <h6 class="mb-0 fw-bold text-dark">Atleta: @turno.ClienteUsername</h6>
+                                        </div>
+                                        <small class="text-muted">Código de Turno: <code>#@turno.Id</code> | Fecha: @turno.Fecha.ToString("dd/MM/yyyy")</small>
+                                    </div>
+                                    @if (posicion == 1)
+                                    {
+                                        <span class="badge bg-danger text-uppercase fw-bold p-2">¡Atender Ahora!</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">En espera</span>
+                                    }
+                                </div>
+                                posicion++;
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card border-0 shadow-sm bg-light p-2">
+                <div class="card-body">
+                    <h5 class="fw-bold text-dark mb-3">Despachar Próximo Alumno</h5>
+
+                    @{
+                        var proximoTurno = Model.MisTurnosAsignados.FirstOrDefault();
+                    }
+
+                    @if (proximoTurno == null)
+                    {
+                        <p class="text-muted small">Deben ingresar clientes a la fila para poder redactar rutinas.</p>
+                        <button class="btn btn-secondary w-100 btn-sm fw-bold" disabled>Fila Vacía</button>
+                    }
+                    else
+                    {
+                        <p class="small text-secondary">Estás asignando entrenamiento a: <strong class="text-dark">@proximoTurno.ClienteUsername</strong> (Turno <code>#@proximoTurno.Id</code>)</p>
+
+                        <form method="post" asp-page-handler="AsignarRutina">
+                            <input type="hidden" asp-for="TurnoIdAtendiendo" value="@proximoTurno.Id" />
+
+                            <div class="mb-3">
+                                <label class="small fw-semibold text-secondary mb-1">Prescripción de la Rutina (Ej: 4 Series de Prensa, 3 de Sentadillas...)</label>
+                                <textarea asp-for="RedaccionRutina" class="form-control" rows="5" placeholder="Escribe aquí los ejercicios detallados..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100 fw-bold">
+                                Finalizar Turno y Liberar Fila
+                            </button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+[
+  {
+    "MembresiaActual": {
+      "Tipo": "Mensual",
+      "FechaInicio": "2026-05-17T17:15:52.4326851-05:00",
+      "FechaVencimiento": "2026-06-17T17:15:52.4326874-05:00",
+      "Activa": true
+    },
+    "HistorialTurnos": {
+      "Contado": 1
+    },
+    "Id": "70c07084",
+    "NombreCompleto": "Cristian Uribe Posada",
+    "Username": "Cristian",
+    "Password": "1234",
+    "Rol": "Cliente"
+  }
+]

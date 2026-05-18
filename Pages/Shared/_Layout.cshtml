@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AthletaNet</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AthletaNet.styles.css" asp-append-version="true" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+        font-family: 'Poppins', sans-serif !important;
+        }
+
+        body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #fcfcfc;
+        }
+
+        .navbar-brand {
+        font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand text-dark" asp-area="" asp-page="/Index">
+                    Athleta<span class="text-primary">Net</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-medium" asp-area="" asp-page="/Index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="nav-link text-dark fw-medium btn btn-link" data-bs-toggle="modal" data-bs-target="#aboutModal" style="text-decoration: none; box-shadow: none;">
+                                Acerca de
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title fw-bold" id="aboutModalLabel">📋 Acerca de AthletaNet</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-secondary small mb-3">
+                        <strong>AthletaNet</strong> es una solución de software diseñada para la gestión integral y simulación de flujos de atención en gimnasios, desarrollada como aplicación práctica para el curso de estructuras de datos.
+                    </p>
+
+                    <h6 class="fw-bold text-dark mb-2">Arquitectura y Componentes:</h6>
+                    <ul class="text-secondary small ps-3 mb-4">
+                        <li>Control de acceso inteligente unificado por roles (Admin, Cliente, Instructor).</li>
+                        <li>Gestión de turnos diarios optimizada bajo una estructura de <strong>Cola (FIFO)</strong>.</li>
+                        <li>Administración de catálogos y persistencia dinámica mediante <strong>Listas Enlazadas</strong>.</li>
+                        <li>Persistencia transparente en archivos locales JSON en lugar de bases de datos (SQL).</li>
+                    </ul>
+
+                    <hr class="text-muted opacity-25">
+
+                    <div class="bg-light p-3 rounded border-start border-4 border-primary">
+                        <h6 class="fw-bold text-dark mb-1">Desarrollado por:</h6>
+                        <p class="mb-0 text-primary fw-semibold fs-5">Cristian Uribe Posada</p>
+                        <small class="text-muted d-block">Tecnología en Desarrollo de Software</small>
+                        <small class="text-muted fw-medium">Instituto Tecnológico Metropolitano (ITM)</small>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-secondary btn-sm fw-medium px-3" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted bg-light mt-5">
+        <div class="container text-center py-3">
+            &copy; 2026 - <span class="fw-bold text-dark">AthletaNet</span> - Gestión Inteligente de Gimnasios
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
