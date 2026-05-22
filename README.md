@@ -1,3 +1,5 @@
+[Taller_06_Estructura_de_Datos_2026_1.pdf](https://github.com/user-attachments/files/28132570/Taller_06_Estructura_de_Datos_2026_1.pdf)
+
 # AthletaNet - Gestión Inteligente de Gimnasios
 
 **AthletaNet** es una aplicación web desarrollada en **ASP.NET Core Razor Pages** diseñada para optimizar la administración, el control de acceso y el flujo de atención diaria dentro de un centro de acondicionamiento físico. 
