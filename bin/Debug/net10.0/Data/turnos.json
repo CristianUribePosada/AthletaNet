@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "Id": "de8038",
+    "Fecha": "2026-05-21T00:00:00-05:00",
+    "ClienteUsername": "Cristian",
+    "InstructorUsername": "Pedro123",
+    "RutinaAsociada": null
+  }
+]

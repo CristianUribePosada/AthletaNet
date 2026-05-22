@@ -14,5 +14,21 @@
     "Username": "Cristian",
     "Password": "1234",
     "Rol": "Cliente"
+  },
+  {
+    "MembresiaActual": {
+      "Tipo": "Mensual",
+      "FechaInicio": "2026-05-18T13:19:49.1966174-05:00",
+      "FechaVencimiento": "2026-06-18T13:19:49.1966231-05:00",
+      "Activa": true
+    },
+    "HistorialTurnos": {
+      "Contado": 0
+    },
+    "Id": "2b9730d5",
+    "NombreCompleto": "Luis Arango",
+    "Username": "Luis",
+    "Password": "1234",
+    "Rol": "Cliente"
   }
 ]

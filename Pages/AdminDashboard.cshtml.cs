@@ -16,9 +16,10 @@ namespace AthletaNet.Pages
             _gymService = gymService;
         }
 
-        // Propiedades para listar en la interfaz usando tus estructuras
+        // Propiedades para listar en la interfaz
         public IEnumerable<Cliente> ListaClientes => _gymService.Clientes.ObtenerTodos();
         public IEnumerable<Instructor> ListaInstructores => _gymService.Instructores.ObtenerTodos();
+        public IEnumerable<Turno> ListaTurnosGlobales => _gymService.TurnosDelDia.ObtenerTodos();
 
         // Propiedades vinculadas a los formularios de creación
         [BindProperty]
@@ -74,7 +75,7 @@ namespace AthletaNet.Pages
             return RedirectToPage();
         }
 
-        // Handler para Eliminar un Cliente (Usa tu método ListaEnlazada.Eliminar)
+        // Handler para Eliminar un Cliente
         public IActionResult OnPostEliminarCliente(string username)
         {
             _gymService.EliminarCliente(username);

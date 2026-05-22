@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\crism\\source\\repos\\AthletaNet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\admindashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\admindashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\datastructures\\cola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:datastructures\\cola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\datastructures\\listaenlazada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:datastructures\\listaenlazada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,44 +35,28 @@
       "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\instructordashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\instructordashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\instructordashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\instructordashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\instructordashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\instructordashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\admindashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\admindashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\clientedashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\clientedashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,14 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\datastructures\\cola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:datastructures\\cola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|c:\\users\\crism\\source\\repos\\athletanet\\datastructures\\listaenlazada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D886F3CF-A7AC-3B52-3763-5B4B9577AA04}|AthletaNet.csproj|solutionrelative:datastructures\\listaenlazada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,121 +86,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAgwFMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAACAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-17T22:43:05.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T22:43:05.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-17T21:59:06.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cola.cs",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\Cola.cs",
+              "RelativeDocumentMoniker": "DataStructures\\Cola.cs",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\Cola.cs",
+              "RelativeToolTip": "DataStructures\\Cola.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T20:49:59.695Z",
+              "WhenOpened": "2026-05-17T20:44:28.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "InstructorDashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\InstructorDashboard.cshtml",
-              "RelativeDocumentMoniker": "Pages\\InstructorDashboard.cshtml",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\InstructorDashboard.cshtml",
-              "RelativeToolTip": "Pages\\InstructorDashboard.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAGAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-17T22:08:23.97Z",
+              "Title": "ListaEnlazada.cs",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\ListaEnlazada.cs",
+              "RelativeDocumentMoniker": "DataStructures\\ListaEnlazada.cs",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\ListaEnlazada.cs",
+              "RelativeToolTip": "DataStructures\\ListaEnlazada.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T20:42:59.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AdminDashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\AdminDashboard.cshtml",
               "RelativeDocumentMoniker": "Pages\\AdminDashboard.cshtml",
               "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\AdminDashboard.cshtml",
               "RelativeToolTip": "Pages\\AdminDashboard.cshtml",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAwM0AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-17T22:00:39.679Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Login.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Login.cshtml",
-              "RelativeToolTip": "Pages\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-17T22:23:28.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClienteDashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\ClienteDashboard.cshtml",
-              "RelativeDocumentMoniker": "Pages\\ClienteDashboard.cshtml",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\ClienteDashboard.cshtml",
-              "RelativeToolTip": "Pages\\ClienteDashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-17T22:04:06.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAD4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-17T21:59:06.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T21:58:49.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "AdminDashboard.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\AdminDashboard.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\AdminDashboard.cshtml.cs",
               "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\AdminDashboard.cshtml.cs",
               "RelativeToolTip": "Pages\\AdminDashboard.cshtml.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAiwE0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-17T22:00:20.712Z",
               "EditorCaption": ""
@@ -212,6 +167,78 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Login.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-17T22:23:28.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GymService.cs",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Services\\GymService.cs",
+              "RelativeDocumentMoniker": "Services\\GymService.cs",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Services\\GymService.cs",
+              "RelativeToolTip": "Services\\GymService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T20:48:56.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClienteDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\ClienteDashboard.cshtml",
+              "RelativeDocumentMoniker": "Pages\\ClienteDashboard.cshtml",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\ClienteDashboard.cshtml",
+              "RelativeToolTip": "Pages\\ClienteDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-17T22:04:06.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T20:49:59.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InstructorDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\InstructorDashboard.cshtml",
+              "RelativeDocumentMoniker": "Pages\\InstructorDashboard.cshtml",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\InstructorDashboard.cshtml",
+              "RelativeToolTip": "Pages\\InstructorDashboard.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAGAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-17T22:08:23.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T21:58:49.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "InstructorDashboard.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\InstructorDashboard.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\InstructorDashboard.cshtml.cs",
@@ -219,12 +246,11 @@
               "RelativeToolTip": "Pages\\InstructorDashboard.cshtml.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAiwFYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:08:06.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T22:08:06.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ClienteDashboard.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\ClienteDashboard.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\ClienteDashboard.cshtml.cs",
@@ -232,24 +258,11 @@
               "RelativeToolTip": "Pages\\ClienteDashboard.cshtml.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAiwEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:04:27.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T22:04:27.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GymService.cs",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Services\\GymService.cs",
-              "RelativeDocumentMoniker": "Services\\GymService.cs",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Services\\GymService.cs",
-              "RelativeToolTip": "Services\\GymService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T20:48:56.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Instructor.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Models\\Instructor.cs",
               "RelativeDocumentMoniker": "Models\\Instructor.cs",
@@ -261,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
@@ -273,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Turno.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Models\\Turno.cs",
               "RelativeDocumentMoniker": "Models\\Turno.cs",
@@ -285,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Membresia.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Models\\Membresia.cs",
               "RelativeDocumentMoniker": "Models\\Membresia.cs",
@@ -297,20 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Pages\\Login.cshtml.cs",
-              "RelativeToolTip": "Pages\\Login.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T20:56:30.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
@@ -319,30 +319,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-17T20:45:21.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Cola.cs",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\Cola.cs",
-              "RelativeDocumentMoniker": "DataStructures\\Cola.cs",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\Cola.cs",
-              "RelativeToolTip": "DataStructures\\Cola.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T20:44:28.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ListaEnlazada.cs",
-              "DocumentMoniker": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\ListaEnlazada.cs",
-              "RelativeDocumentMoniker": "DataStructures\\ListaEnlazada.cs",
-              "ToolTip": "C:\\Users\\crism\\source\\repos\\AthletaNet\\DataStructures\\ListaEnlazada.cs",
-              "RelativeToolTip": "DataStructures\\ListaEnlazada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T20:42:59.006Z"
             }
           ]
         }

@@ -96,3 +96,4 @@ C:\Users\crism\source\repos\AthletaNet\obj\Debug\net10.0\AthletaNet.pdb
 C:\Users\crism\source\repos\AthletaNet\obj\Debug\net10.0\AthletaNet.genruntimeconfig.cache
 C:\Users\crism\source\repos\AthletaNet\obj\Debug\net10.0\ref\AthletaNet.dll
 C:\Users\crism\source\repos\AthletaNet\obj\Debug\net10.0\compressed\qjcvp8q24j-{0}-lt53umcn5r-lt53umcn5r.gz
+C:\Users\crism\source\repos\AthletaNet\obj\Debug\net10.0\AthletaNet.sourcelink.json

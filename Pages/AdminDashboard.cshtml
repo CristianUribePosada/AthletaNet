@@ -20,6 +20,7 @@
 
     <div class="row">
         <div class="col-md-4 mb-4">
+
             <div class="card shadow-sm border-0 bg-light p-3 mb-3">
                 <h5 class="fw-bold text-primary mb-3">Registrar Cliente</h5>
                 <form method="post" asp-page-handler="CrearCliente">
@@ -68,11 +69,12 @@
         </div>
 
         <div class="col-md-8">
+
             <div class="card shadow-sm border-0 mb-4">
                 <div class="card-body">
                     <h5 class="fw-bold text-dark mb-3">Clientes en la Lista Enlazada</h5>
                     <div class="table-responsive">
-                        <table class="table table-hover align-middle row-border">
+                        <table class="table table-hover align-middle">
                             <thead class="table-dark">
                                 <tr>
                                     <th>Nombre</th>
@@ -107,7 +109,7 @@
                                         </td>
                                         <td class="text-center">
                                             <form method="post" asp-page-handler="EliminarCliente" asp-route-username="@cliente.Username" class="d-inline">
-                                                <button type="submit" class="btn btn-danger btn-sm px-2 py-0fw-bold" onclick="return confirm('¿Seguro que deseas eliminar este cliente? Se borrarán sus turnos.')">Eliminar</button>
+                                                <button type="submit" class="btn btn-danger btn-sm px-2 py-0 fw-bold" onclick="return confirm('¿Seguro que deseas eliminar este cliente? Se borrarán sus turnos.')">Eliminar</button>
                                             </form>
                                         </td>
                                     </tr>
@@ -118,11 +120,11 @@
                 </div>
             </div>
 
-            <div class="card shadow-sm border-0">
+            <div class="card shadow-sm border-0 mb-4">
                 <div class="card-body">
                     <h5 class="fw-bold text-dark mb-3">Instructores Registrados</h5>
                     <div class="table-responsive">
-                        <table class="table table-hover align-middle row-border">
+                        <table class="table table-hover align-middle">
                             <thead class="table-dark">
                                 <tr>
                                     <th>Nombre</th>
@@ -167,6 +169,51 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="fw-bold text-dark mb-3">Turnos en Fila</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Ticket</th>
+                                    <th>Atleta (Usuario)</th>
+                                    <th>Instructor Asignado</th>
+                                    <th>Estado de Turno</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (!Model.ListaTurnosGlobales.Any())
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center text-muted py-3">No hay turnos activos en la cola del gimnasio hoy.</td>
+                                    </tr>
+                                }
+                                @foreach (var turno in Model.ListaTurnosGlobales)
+                                {
+                                    <tr>
+                                        <td><code>#@turno.Id</code></td>
+                                        <td class="fw-bold text-secondary">@@@turno.ClienteUsername</td>
+                                        <td>@(string.IsNullOrEmpty(turno.InstructorUsername) ? "💪 Entrenamiento Libre" : $"Coach: {turno.InstructorUsername}")</td>
+                                        <td>
+                                            @if (string.IsNullOrEmpty(turno.RutinaAsociada))
+                                            {
+                                                <span class="badge bg-warning text-dark">En Espera</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-success">Rutina Asignada</span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
